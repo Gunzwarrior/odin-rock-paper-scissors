@@ -1,5 +1,5 @@
-// current step 4. write a function that plays a single
-// round of rock paper scissors
+// current step 6. write a game function that plays
+// through 5 rounds and declares a winner
 
 function computerPlay() {
   let answer;
@@ -39,4 +39,10 @@ function playRound(playerSelection, computerSelection) {
     result = "Please enter rock paper or scissors";
   }
   return result;
+}
+
+function game() {
+  for (i = 0; i < 5; i++) {
+    console.log(playRound("rock", computerPlay()));
+  }
 }
